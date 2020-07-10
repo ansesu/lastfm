@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.1.min.js" integrity="sha384-JpP8FXbgAZLkfur7LiK3j9AGBhHNIvF742meBJrjO2ShJDhCG2I1uVvW+0DUtrmc" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="481ea740-cf8a-42bc-9c4b-b5001e04956b" data-root-id="7485"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="7598">
+          {"e9b4882b-b88f-43d9-b33e-c34021b026a7":{"roots":{"references":[{"attributes":{"text":""},"id":"7515","type":"Title"},{"attributes":{},"id":"7519","type":"Selection"},{"attributes":{"axis_label":"Song count","axis_label_text_font_size":"14pt","axis_label_text_font_style":"normal","formatter":{"id":"7516"},"major_label_text_font_size":"12pt","ticker":{"id":"7499"}},"id":"7498","type":"LinearAxis"},{"attributes":{},"id":"7520","type":"UnionRenderers"},{"attributes":{"end":6.5,"start":-0.5},"id":"7486","type":"DataRange1d"},{"attributes":{"callback":null,"renderers":[{"id":"7507"}],"tooltips":[["Weekday","@weekday_str_complete_en"],["Count","@count{,}"]]},"id":"7509","type":"HoverTool"},{"attributes":{"axis_label":"Weekday","axis_label_text_font_size":"14pt","axis_label_text_font_style":"normal","formatter":{"id":"7518"},"major_label_overrides":{"0":"Mon","1":"Tue","2":"Wed","3":"Thu","4":"Fri","5":"Sat","6":"Sun"},"major_label_text_font_size":"12pt","ticker":{"id":"7511"}},"id":"7494","type":"LinearAxis"},{"attributes":{},"id":"7516","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","logo":null,"tools":[{"id":"7509"}]},"id":"7502","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#2ca25f"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":0},"top":{"field":"count"},"width":{"value":0.9},"x":{"field":"weekday"}},"id":"7506","type":"VBar"},{"attributes":{"ticks":[0,1,2,3,4,5,6]},"id":"7511","type":"FixedTicker"},{"attributes":{"data_source":{"id":"7503"},"glyph":{"id":"7505"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7506"},"selection_glyph":null,"view":{"id":"7508"}},"id":"7507","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"7494"}],"center":[{"id":"7497"},{"id":"7501"}],"left":[{"id":"7498"}],"plot_height":500,"plot_width":700,"renderers":[{"id":"7507"}],"sizing_mode":"stretch_both","title":{"id":"7515"},"toolbar":{"id":"7502"},"toolbar_location":null,"x_range":{"id":"7486"},"x_scale":{"id":"7490"},"y_range":{"id":"7488"},"y_scale":{"id":"7492"}},"id":"7485","subtype":"Figure","type":"Plot"},{"attributes":{"data":{"count":[2182,1559,1452,1949,1449,914,710],"index":[0,1,2,3,4,5,6],"weekday":[0,1,2,3,4,5,6],"weekday_str_complete_en":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"weekday_str_complete_pt":["Segunda","Ter\u00e7a","Quarta","Quinta","Sexta","S\u00e1bado","Domingo"],"weekday_str_en":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],"weekday_str_pt":["Seg","Ter","Qua","Qui","Sex","S\u00e1b","Dom"]},"selected":{"id":"7519"},"selection_policy":{"id":"7520"}},"id":"7503","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"7498"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"7501","type":"Grid"},{"attributes":{"axis":{"id":"7494"},"grid_line_color":null,"ticker":null},"id":"7497","type":"Grid"},{"attributes":{},"id":"7490","type":"LinearScale"},{"attributes":{"start":0},"id":"7488","type":"DataRange1d"},{"attributes":{"source":{"id":"7503"}},"id":"7508","type":"CDSView"},{"attributes":{},"id":"7492","type":"LinearScale"},{"attributes":{},"id":"7499","type":"BasicTicker"},{"attributes":{},"id":"7518","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.85},"fill_color":{"value":"#2ca25f"},"line_alpha":{"value":0.85},"line_color":{"value":"#1f77b4"},"line_width":{"value":0},"top":{"field":"count"},"width":{"value":0.9},"x":{"field":"weekday"}},"id":"7505","type":"VBar"}],"root_ids":["7485"]},"title":"Bokeh Application","version":"2.0.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('7598').textContent;
+                  var render_items = [{"docid":"e9b4882b-b88f-43d9-b33e-c34021b026a7","root_ids":["7485"],"roots":{"7485":"481ea740-cf8a-42bc-9c4b-b5001e04956b"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
